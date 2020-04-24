@@ -1,9 +1,11 @@
 Docker SonarScanner
 --
 
-SonarScanner container to use when there is no specific scanner for your build system.
+[SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/) container to use when there is no specific scanner for your build system.
 
-[SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)
+### Requirements
+
+* docker
 
 ### Installation
 
@@ -11,7 +13,7 @@ To build the container:
 
     docker build -t uridium/sonar-scanner .
 
-To download the latest version:
+To download the latest version from the [registry](https://hub.docker.com/r/uridium/sonar-scanner/):
 
     docker pull uridium/sonar-scanner
 
