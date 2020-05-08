@@ -1,5 +1,6 @@
 Docker SonarScanner
 --
+[![Docker Hub](https://img.shields.io/docker/cloud/build/uridium/sonar-scanner.svg)](https://hub.docker.com/r/uridium/sonar-scanner/)
 
 [SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/) container to use when there is no specific scanner for your build system.
 
