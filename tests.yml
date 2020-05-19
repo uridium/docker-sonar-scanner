@@ -1,0 +1,22 @@
+---
+schemaVersion: '2.0.0'
+
+fileExistenceTests:
+- name: 'sonar-scanner'
+  path: '$SONAR_SCANNER_HOME/bin/sonar-scanner'
+  shouldExist: True
+  permissions: '-rwxr-xr-x'
+
+commandTests:
+- name: 'sonar-scanner'
+  command: 'sonar-scanner'
+  args: ['--version']
+  expectedOutput: ['[0-9.]*']
+- name: 'nodejs'
+  command: 'nodejs'
+  args: ['--version']
+  expectedOutput: ['[0-9.]*']
+- name: 'npm'
+  command: 'npm'
+  args: ['--version']
+  expectedOutput: ['[0-9.]*']
