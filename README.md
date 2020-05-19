@@ -22,6 +22,10 @@ To download a specific sonar-scanner version:
 
     docker pull uridium/sonar-scanner:4.3.0.2102
 
+To [verify](https://github.com/GoogleContainerTools/container-structure-test) the content and structure of the container:
+
+    docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/tests.yml:/tests.yml gcr.io/gcp-runtimes/container-structure-test test -i uridium/sonar-scanner -c tests.yml
+
 ### Use
 
 To run analysis in the current directory:
